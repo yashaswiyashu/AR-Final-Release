@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>H Nagesh</title>
+    <link rel="icon" type="image/x-icon" class="favicon" href="../assets/favicon.ico">
+  
+    <link rel="preload" href="./facebook.png" as="image" />
+    <link rel="preload" href="./instagram.png" as="image" />
+    <link rel="preload" href="./web.png" as="image" />
+    <link rel="preload" href="./play.png" as="image" />
+
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
+    <script src="./production-script.js" type="text/javascript" async></script>
+
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="container">Focus the camera on the QR Code at all times/QR Code &#3246;&#3271;&#3250;&#3270;&#3221;&#3277;&#3247;&#3262;&#3246;&#3248;&#3262;&#3253;&#3240;&#3277;&#3240;&#3265;&#3221;&#3271;&#3202;&#3238;&#3277;&#3248;&#3264;&#3221;&#3248;&#3263;&#3256;&#3263;</h1>
+	<a-scene markers_start vr-mode-ui="enabled: false" loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; patternRatio:0.8 ; trackingMethod: best; maxDetectionRate: 60" id="scene" embedded cursor="fuse: false; rayOrigin: mouse" raycaster="objects: .intersectable;">
+		<a-assets>
+			<video id="vid-0" src="https://customer-qtt3v55ysr8o49k3.cloudflarestream.com/641486edb251c9d3cff939c7103ca28c/manifest/video.m3u8" type="application/x-mpegURL" preload="yes" controls="true" response-type="arraybuffer" crossorigin="anonymous" webkit-playsinline defaultmuted playsinline></video>
+			<video id="vid-1" src="https://customer-qtt3v55ysr8o49k3.cloudflarestream.com/553ec04798dd853f35b301d8ef58711b/manifest/video.m3u8" type="application/x-mpegURL" preload="yes" controls="true" response-type="arraybuffer" crossorigin="anonymous" webkit-playsinline defaultmuted playsinline></video>
+			<img id="website" src="./web.png"> 
+			<img id="facebook" src="./facebook.png"> 
+			<img id="insta" src="./instagram.png"> 
+			<img id="play" src="./play.png">
+		</a-assets>
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
+
+</html>
